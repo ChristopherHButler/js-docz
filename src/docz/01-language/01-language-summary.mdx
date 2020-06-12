@@ -1,0 +1,113 @@
+---
+name: 01 - The JavaScript Language
+menu: 
+route: 
+---
+
+import Accordion from '../../components/common/Accordion/Accordion';
+import Section from '../../components/common/Accordion/Section';
+import Panel from '../../components/common/Accordion/Panel';
+
+# The JavaScript Language
+
+[home](/)
+
+## Summary
+
+JavaScript is a dynamic, weakly typed programming language which is compiled (Interpreted) at runtime (“on the fly”). <br />
+It can be executed as part of a webpage in a browser or directly on any machine (“host environment” ie: Node.js).
+
+## Resources
+
+ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">MDN - What is JavaScript</a>
+
+## General
+
+### JavaScript is:
+
+  - high-level.
+  - multi-paradigm.
+  - interpreted and sometimes compiled at runtime with a just-in-time (JIT) compiler.
+  - dynamically and weakly typed.
+  - prototype-based, object oriented with first-class functions.
+ <br />
+
+ **Note:** You may sometimes hear JavaScript described as an intrepreted language but technically, JavaScript is NOT an interpreted language;
+ technically it depends on the implementation. See notes on Google V8 Engine (which uses a JIT complier) below. 
+
+
+ ### What else?
+
+ - Data types are assumed (inferred) (ie assigned to variables) automatically. You don’t have to define that some variable must hold a certain data type (ie a number) like you do in C#, Java or TypeScript.
+ - Data types are also not set in stone, they can change at run-time (ie start as a string and change to a number).
+
+
+ ### History
+
+ - Developed by Brandan Eich at Netscape in 1995 in 10 days. (you didn't have to flex so hard Brandan!)
+
+
+## Details
+
+
+ ### Programming Language Features:
+
+ #### Types
+
+ **Type Checking** is the process of verifying and enforcing the constraints of types.
+ Type Checking may occur either at compile-time (a static check) or at run-time (dynamic check).
+
+
+ #### Statically typed languages
+ - Statically typed programming languages do type checking at compile-time (as opposed to run-time).
+ - They do more processing at compile time but give better run-time performance.
+ - Are less prone to runtime errors but provide less flexibility to programmer.
+
+ > C# <br />
+ > type `variableName` = value; <br />
+ > int num = 13;
+
+
+ #### Dynamically typed languages
+ - Dynamically typed programming languages do type checking at run-time as opposed to compile-time.
+ - Types are associated with a value, rather than an expression.
+ - Usually have more efficient compiler/interpreters, but type-checking at run-time affects performance.
+ - Provides more flexibility but more prone to runtime errors.
+
+ > JavaScript  <br />
+ > var | const | let variableName = value; <br />
+ > let num = 13; <br />
+ > num2 = 19;
+
+ * In JavaScript you can also declare a variable with using the var, const or let keyword.
+
+
+ #### Strong and Weak Typed Systems
+ Languages are often colloquially referred to as strongly typed or weakly typed.
+ In fact, there is no universally accepted definition of what these terms mean.
+ No programming language fits any of these definitions 100%.
+
+ Strong/Weak Typing is about how strictly types are distinguished (e.g. whether the language tries to do an implicit conversion, i.e. coersion, from strings to numbers).
+
+
+ #### Strongly Typed
+ A strongly-typed language is one in which variables are bound to specific data types, and will result in type errors 
+ if types do not match up as expected in the expression — regardless of when type checking occurs.
+
+ Examples: Python, Java, C#
+
+ #### Weakly Typed (loosely typed)
+ (In) A weakly typed language (the interpreter or compiler) will attempt to implicitly convert (coerse) a value from one type to another.
+
+ Examples: JavaScript
+
+
+ ## Reference 
+
+ - <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript - Wikipedia</a>
+
+ - <a href="https://en.wikipedia.org/wiki/Type_system#STATIC" target="_blank">Type System - Wikipedia</a>
+ - <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing" target="_blank">Strong and weak typing - Wikipedia</a>
+ 
+  - <a href="https://android.jlelse.eu/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b" target="_blank">Statically vs Dynamically Typed Languages - Medium</a>
+  - <a href="https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/" target="_blank">An Introduction To Programming Type Systems - Smashing Magazine</a>
